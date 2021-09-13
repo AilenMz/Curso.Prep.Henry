@@ -1,0 +1,12 @@
+02-JS-I
+
+Variables: una variable es una forma de asignar un valor determinado "objeto". Se asigna con la variable VAR. Ejemplo Var nombre= 'Ailen; 
+
+Strings: bloques de textos que deben ser asignados dentro de comillas.
+
+Funciones: forma para calcular o asignar variables con un sentido. Es posible sumar argumentos (variables dentro de la función), 
+y luego el código a ejecutar. Al final es necesario utilizar "return" para que la función devuelva datos y puedan ser utilizados más adelante.
+
+Declaraciones if: es una función que nos permite ver si algo es verdadero o falso (si cumple con los parametros establecidos o no)
+
+Booleanos: en java los valores booleanos son solamente true o false. 
