@@ -1,0 +1,4 @@
+For es una función que permite ejecutar un código todas las veces necesarias mientras la condicion sea verdadera;
+&&  || y ! son operadores lógicos que nos permiten comparar dos condiciones; devolviendo true o false según corresonda. Para 
+ que && (and) sea true ambas condiciones deben ser verdaderas, para que || (or) sea true al menos una condicion debe ser verdadera;
+ En el caso de ! (not) devuelve el operador booleano opuesto al que debería salir.  
