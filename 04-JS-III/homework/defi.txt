@@ -1,0 +1,1 @@
+array o arreglo es una forma de almacenar una lista de elementos dentro de una matriz. 
