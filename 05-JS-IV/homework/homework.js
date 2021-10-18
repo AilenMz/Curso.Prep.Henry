@@ -25,6 +25,9 @@ function agregarPropiedad(objeto, property) {
   // Tu código:
   objeto[property] = null ;
   return objeto 
+
+  // no es objeto.property porque no conozco el valor de propery. El dot notation es por ejemplo si conozco la propiedad 
+  // ej objeto.edad. Con el [] accedemos al valor de property
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -73,7 +76,7 @@ function tieneEmail(usuario) {
   // De lo contratio, devuelve "false"
   // Tu código:
 for (let property in usuario) {
-  if (usuario['email']) {
+  if (usuario['email']) { // podes poner solo usuario.email o usuario["email"] para ver si exite o no un valor para esa propiedad
     return true
   }
   else return false
@@ -96,6 +99,8 @@ for (let clave in objeto) {
 }
 return false
 
+// otra opción es return objeto.hasOwnProperty (propiedad) y devuelve true o false si existe 
+
 }
 
 function verificarPassword(usuario, password) {
@@ -103,10 +108,10 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if (usuario['password'] === password) {
+  if (usuario.password === password) {
     return true
   }
-  // VER POR QUÉ PRIMERO VA ENTRE COMILLAS
+ 
   else return false
 }
 
