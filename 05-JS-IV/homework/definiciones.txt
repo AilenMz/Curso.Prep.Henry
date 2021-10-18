@@ -1,0 +1,68 @@
+* Objetos
+
+Los objetos son elementos similares a las matrices pero que contienen información más detallada sobre algo. 
+A diferencia de las matrices que tienen elementos valorados en índices, los objetos usan un concepto llamado 
+pares de clave:valor (key:value). La clave (key) es el identificador y el valor (value) es el valor que queremos 
+guardar en esa clave. Los objetos pueden tener varias key:values dentro separados por coma. 
+Se declaran con llaves, 
+
+var nuevoObjeto = {
+    nombre: Ailen ,
+    apellido: Martinez ,
+};
+
+Para acceder podes a) nuevoObjeto ['nombre'] o nuevoObjeto.nombre  *la comilla en el a) se puede obviar si invoco una variable
+
+* Propiedades
+
+Las propiedades son los keys, o identificadores (nombre, appellido, password), etc. Solo puede haber una por objeto
+
+* Métodos
+
+En los objetos, los valores se pueden establecer en funciones. Las funciones guardadas en un objeto se denominan métodos. 
+Hemos utilizado muchos métodos hasta ahora a lo largo de este curso. .length, .push, .pop, etc., son todos métodos. 
+Podemos establecer una clave para un nombre y el valor para una función. Al igual que otras veces que llamamos métodos, 
+llamaremos a este método usando notación de puntos y paréntesis finales (Nota: podemos llamar a un método con argumentos 
+como lo haríamos con una función normal):
+
+const nuevoObjeto = {
+    decirHola: function() {
+        console.log('Hola a todo el mundo!');
+    }
+}
+
+nuevoObjeto.decirHola(); //Hola a todo el mundo!
+
+* Bucle `for…in`
+
+Como las claves keys o propiedades no son numericas, el bucle for no sirve para recorrerlo. En cambio existe el bucle
+for.in el cual permite recorrerlo
+
+for (let clave in usuario){
+    console.log(clave);
+    console.log(usuario[clave]);
+}
+
+podes poner la palabra "clave" o "prop" o "property 
+
+
+* Notación de puntos vs notación de corchetes
+
+Acceder a los valores
+Una vez que tengamos los pares clave-valor, podemos acceder a esos valores llamando al nombre del objeto y la clave. 
+Hay dos formas diferentes de hacer esto, usando puntos o usando corchetes.
+
+Con la notación de puntos podemos llamar al nombre del objeto, un punto y el nombre de la clave. Así como llamamos a 
+la propiedad .length en una matriz. La propiedad de longitud es un par de clave-valor.
+
+user.lovesJavascript; // true
+user.username;        // juan.perez
+La notación de corchetes es como llamar a un elemento en una matriz, aunque con corchetes debemos usar una cadena o número, 
+o una variable que apunte a una cadena o número. Se puede llamar a cada clave envolviéndola con comillas:
+
+const passString = 'password';
+user['lovesJavascript']; // true
+user['username'];        // juan.perez
+user[passString];        // loremipsumpwd123
+
+Generalmente, verás que los corchetes casi siempre se usan con variables.
