@@ -1,0 +1,8 @@
+prototype
+
+Es una forma de crear un método que compartan todos los objetos dentro de una clase
+
+
+Constructors (de Clases)
+
+Es una plantilla que compartirán objetos de modo que sea escapable y ahorrar lineas de código
