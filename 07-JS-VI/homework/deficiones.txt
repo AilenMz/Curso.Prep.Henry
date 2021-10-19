@@ -1,0 +1,4 @@
+Funciones Callback
+
+es la capacidad de pasar una función como argumento a otra función.
+La convención es usar cb como argumento para la variable que se usará de callback.
