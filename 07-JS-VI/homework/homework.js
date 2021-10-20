@@ -8,7 +8,7 @@ var enMayuscula = nombre.charAt(0).toUpperCase () + nombre.slice (1);
 
 return enMayuscula
    
-
+// puede ser solo return nombre.charAt(0).toUpperCase () + nombre.slice (1);
 }
 
 function invocarCallback(cb) {
@@ -35,7 +35,7 @@ function sumarArray(numeros, cb) {
   // var numeros = [1,2,3,4,5]
   // var suma = 0;
   // for(var i = 0; i < numeros.length; i++) {
-  //   suma = suma + numeros[i];
+  //   suma = suma + numeros[i]; -----< suma += numeros[i]
   // }
   // cb(suma);
 
@@ -102,14 +102,21 @@ function filter(array) {
 //   return Array2;
 // }
 
-var arrayconA = [];
+// opción 2
 
-array.forEach (function (elemento){
-  if (elemento.charAt(0) === 'a') {
-    arrayconA.push (elemento)
-  }
+// var arrayconA = [];
+
+// array.forEach (function (elemento){
+//   if (elemento.charAt(0) === 'a') {
+//     arrayconA.push (elemento)
+//   }
+// })
+// return arrayconA
+
+var filterArray = array.filter (function (elemento){
+  return elemento.charAt(0) === "a"
 })
-return arrayconA
+return filterArray
 }
 
 
